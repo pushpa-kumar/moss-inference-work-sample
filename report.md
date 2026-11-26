@@ -66,5 +66,5 @@ When I gave GLM 5.3 a similar situation directly through the Inference API, it a
 
 **Results**
 
-- moss-balanced with a schema: 6 of 6 tasks completed, all fields correct, about 30-40 seconds and $0.07 each.
+- moss-balanced with a schema: 6 of 6 runs completed, all fields correct, about 30-40 seconds and $0.07 each.
 - GLM 5.3 without a schema: 1 of 3 completed, about 20-40 seconds and $0.025 each.
