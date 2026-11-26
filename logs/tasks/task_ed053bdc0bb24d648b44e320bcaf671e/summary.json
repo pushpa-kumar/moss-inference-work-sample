@@ -1,0 +1,23 @@
+{
+  "label": "t02-portal-like-api",
+  "task_id": "task_ed053bdc0bb24d648b44e320bcaf671e",
+  "model": "z-ai/glm-5.3",
+  "effort": "medium",
+  "schema": false,
+  "status": "completed",
+  "error": null,
+  "verification": {
+    "method": "agent_reported",
+    "passed": null
+  },
+  "wall_s": 40.7,
+  "usage_steps": 7,
+  "trace_steps": 7,
+  "cost_usd": 0.027045,
+  "has_result": true,
+  "output_files": [
+    "outputs/rrr_naatu_naatu.md"
+  ],
+  "fields_correct": 0,
+  "fields_total": 8
+}

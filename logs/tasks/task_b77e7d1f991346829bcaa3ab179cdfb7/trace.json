@@ -1,0 +1,86 @@
+{
+  "final_result": "{\n  \"film_title\": \"RRR\",\n  \"director\": \"S. S. Rajamouli\",\n  \"release_date\": \"2022-03-25\",\n  \"runtime_minutes\": 182,\n  \"song_title\": \"Naatu Naatu\",\n  \"composer\": \"M. M. Keeravani\",\n  \"lyricist\": \"Chandrabose\",\n  \"song_length\": \"3:36\"\n}",
+  "steps": 6,
+  "screenshots": [
+    {
+      "path": "00001-step-3.png",
+      "step": 3,
+      "captured_at": 1795676629.5245903,
+      "url": "https://duckduckgo.com/?q=Telugu+film+Academy+Award+Naatu+Naatu+Wikipedia"
+    },
+    {
+      "path": "00002-step-4.png",
+      "step": 4,
+      "captured_at": 1795676631.3696465,
+      "url": "https://duckduckgo.com/?q=Telugu+film+Academy+Award+Naatu+Naatu+Wikipedia&ia=web"
+    },
+    {
+      "path": "00003-step-5.png",
+      "step": 5,
+      "captured_at": 1795676636.482549,
+      "url": "https://en.wikipedia.org/wiki/RRR"
+    },
+    {
+      "path": "00004-step-6.png",
+      "step": 6,
+      "captured_at": 1795676641.1827428,
+      "url": "https://en.wikipedia.org/wiki/Naatu_Naatu"
+    }
+  ],
+  "timeline": [
+    {
+      "step": 1,
+      "at": 1795676626.2379658,
+      "kind": "text",
+      "text": "I\u2019ll check the film and song\u2019s own Wikipedia pages for all eight fields and the Academy Award win, then return the result as JSON with source links.",
+      "url": null
+    },
+    {
+      "step": 2,
+      "at": 1795676626.4078598,
+      "kind": "tool",
+      "text": "skill",
+      "url": null
+    },
+    {
+      "step": 3,
+      "at": 1795676629.5459976,
+      "kind": "tool",
+      "text": "browser_execute",
+      "url": "https://duckduckgo.com/?q=Telugu+film+Academy+Award+Naatu+Naatu+Wikipedia"
+    },
+    {
+      "step": 4,
+      "at": 1795676631.3911233,
+      "kind": "tool",
+      "text": "browser_execute",
+      "url": "https://duckduckgo.com/?q=Telugu+film+Academy+Award+Naatu+Naatu+Wikipedia&ia=web"
+    },
+    {
+      "step": 5,
+      "at": 1795676636.5048184,
+      "kind": "tool",
+      "text": "browser_execute",
+      "url": "https://en.wikipedia.org/wiki/RRR"
+    },
+    {
+      "step": 6,
+      "at": 1795676641.2047865,
+      "kind": "tool",
+      "text": "browser_execute",
+      "url": "https://en.wikipedia.org/wiki/Naatu_Naatu"
+    },
+    {
+      "step": 7,
+      "at": 1795676647.17797,
+      "kind": "text",
+      "text": "{\n  \"film_title\": \"RRR\",\n  \"director\": \"S. S. Rajamouli\",\n  \"release_date\": \"2022-03-25\",\n  \"runtime_minutes\": 182,\n  \"song_title\": \"Naatu Naatu\",\n  \"composer\": \"M. M. Keeravani\",\n  \"lyricist\": \"Chandrabose\",\n  \"song_length\": \"3:36\"\n}",
+      "url": null
+    }
+  ],
+  "video": {
+    "path": "session-1.mp4",
+    "bytes": 1476124,
+    "started_at": "2026-11-26T07:03:39.926000+00:00"
+  }
+}

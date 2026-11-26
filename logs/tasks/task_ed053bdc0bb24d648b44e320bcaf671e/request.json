@@ -1,0 +1,20 @@
+{
+  "label": "t02-portal-like-api",
+  "body": {
+    "goal": "Using Wikipedia, find the Indian (Telugu-language) film whose song won the Academy Award for Best Original Song. Report: the film's title, its director, its theatrical release date (YYYY-MM-DD), its runtime in minutes, the winning song's title, the song's composer, the song's lyricist, and the song's length (m:ss). Use the film's and the song's own Wikipedia pages as the source.",
+    "environment": {
+      "type": "browser",
+      "start_url": "https://en.wikipedia.org/"
+    },
+    "model": "z-ai/glm-5.3",
+    "effort": "medium",
+    "limits": {
+      "max_runtime_seconds": 300,
+      "max_cost_usd": 0.1
+    },
+    "metadata": {
+      "test": "02_india_oscar_song",
+      "label": "t02-portal-like-api"
+    }
+  }
+}

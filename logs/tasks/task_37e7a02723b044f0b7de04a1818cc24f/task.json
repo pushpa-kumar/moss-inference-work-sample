@@ -1,0 +1,97 @@
+{
+  "id": "task_37e7a02723b044f0b7de04a1818cc24f",
+  "object": "task",
+  "status": "completed",
+  "title": "Find cheapest travel book",
+  "goal": "On this bookshop, open the 'Travel' category. Find the cheapest book in that category. Open its product page and report its exact title, price in GBP, star rating (1-5), UPC code, and how many copies are in stock.",
+  "environment": {
+    "type": "browser",
+    "start_url": "https://books.toscrape.com/"
+  },
+  "output_schema": {
+    "type": "object",
+    "required": [
+      "title",
+      "price_gbp",
+      "star_rating",
+      "upc",
+      "in_stock"
+    ],
+    "properties": {
+      "upc": {
+        "type": "string"
+      },
+      "title": {
+        "type": "string"
+      },
+      "in_stock": {
+        "type": "integer"
+      },
+      "price_gbp": {
+        "type": "number"
+      },
+      "star_rating": {
+        "type": "integer",
+        "maximum": 5,
+        "minimum": 1
+      }
+    },
+    "additionalProperties": false
+  },
+  "limits": {
+    "max_cost_usd": 0.5,
+    "max_runtime_seconds": 300
+  },
+  "model": "moss-balanced",
+  "effort": "low",
+  "metadata": {
+    "test": "01_books_travel",
+    "label": "t01-balanced-schema"
+  },
+  "byok": false,
+  "result": {
+    "output": {
+      "upc": "366a236aa1ea6f07",
+      "title": "The Road to Little Dribbling: Adventures of an American in Britain (Notes From a Small Island #2)",
+      "in_stock": 3,
+      "price_gbp": 23.21,
+      "star_rating": 1
+    },
+    "output_text": "{\"title\":\"The Road to Little Dribbling: Adventures of an American in Britain (Notes From a Small Island #2)\",\"price_gbp\":23.21,\"star_rating\":1,\"upc\":\"366a236aa1ea6f07\",\"in_stock\":3}"
+  },
+  "verification": {
+    "method": "output_schema",
+    "passed": true
+  },
+  "usage": {
+    "cost": {
+      "model_usd": 0.072555,
+      "total_usd": 0.072888,
+      "browser_usd": 0.0003333333333333333,
+      "traffic_usd": null
+    },
+    "steps": 7,
+    "cost_usd": 0.072555,
+    "model_calls": 8,
+    "input_tokens": 95286,
+    "output_tokens": 879,
+    "browser_minutes": 0.55,
+    "browser_seconds": 33,
+    "browser_traffic_mb": null,
+    "cached_input_tokens": 77067
+  },
+  "error": null,
+  "trace_available": true,
+  "video_available": false,
+  "video_state": "pending",
+  "live_url": null,
+  "cancel_requested": false,
+  "created_at": "2026-11-25T09:47:29.382242+00:00",
+  "started_at": "2026-11-25T09:47:29.394019+00:00",
+  "finished_at": "2026-11-25T09:48:03.154116+00:00",
+  "files_expire_at": "2026-12-02T09:48:03.154116+00:00",
+  "zero_data_retention": false,
+  "content_expires_at": null,
+  "content_deleted_at": null,
+  "webhook": null
+}

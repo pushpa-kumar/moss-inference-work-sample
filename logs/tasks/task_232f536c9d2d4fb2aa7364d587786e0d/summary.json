@@ -1,0 +1,21 @@
+{
+  "label": "t02-balanced-schema",
+  "task_id": "task_232f536c9d2d4fb2aa7364d587786e0d",
+  "model": "moss-balanced",
+  "effort": "low",
+  "schema": true,
+  "status": "completed",
+  "error": null,
+  "verification": {
+    "method": "output_schema",
+    "passed": true
+  },
+  "wall_s": 33.3,
+  "usage_steps": 5,
+  "trace_steps": 5,
+  "cost_usd": 0.063552,
+  "has_result": true,
+  "output_files": [],
+  "fields_correct": 8,
+  "fields_total": 8
+}

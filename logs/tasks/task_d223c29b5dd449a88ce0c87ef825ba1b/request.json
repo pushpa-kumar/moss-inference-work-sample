@@ -1,0 +1,20 @@
+{
+  "label": "t01-portal-like",
+  "body": {
+    "goal": "On this bookshop, open the 'Travel' category. Find the cheapest book in that category. Open its product page and report its exact title, price in GBP, star rating (1-5), UPC code, and how many copies are in stock.",
+    "environment": {
+      "type": "browser",
+      "start_url": "https://books.toscrape.com/"
+    },
+    "model": "z-ai/glm-5.3",
+    "effort": "medium",
+    "limits": {
+      "max_runtime_seconds": 300,
+      "max_cost_usd": 0.1
+    },
+    "metadata": {
+      "test": "01_books_travel",
+      "label": "t01-portal-like"
+    }
+  }
+}

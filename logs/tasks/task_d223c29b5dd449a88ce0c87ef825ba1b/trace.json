@@ -1,0 +1,73 @@
+{
+  "final_result": "",
+  "steps": 5,
+  "screenshots": [
+    {
+      "path": "00001-step-6.png",
+      "step": 6,
+      "captured_at": 1795600061.2560391,
+      "url": "https://books.toscrape.com/"
+    },
+    {
+      "path": "00002-step-7.png",
+      "step": 7,
+      "captured_at": 1795600063.257315,
+      "url": "https://books.toscrape.com/catalogue/category/books/travel_2/index.html"
+    },
+    {
+      "path": "00003-step-10.png",
+      "step": 10,
+      "captured_at": 1795600066.2987056,
+      "url": "https://books.toscrape.com/catalogue/the-road-to-little-dribbling-adventures-of-an-american-in-britain-notes-from-a-small-island-2_277/index.html"
+    }
+  ],
+  "timeline": [
+    {
+      "step": 2,
+      "at": 1795600054.5930586,
+      "kind": "tool",
+      "text": "skill",
+      "url": null
+    },
+    {
+      "step": 4,
+      "at": 1795600058.7913313,
+      "kind": "tool",
+      "text": "browser_execute",
+      "url": null
+    },
+    {
+      "step": 6,
+      "at": 1795600061.2780516,
+      "kind": "tool",
+      "text": "browser_execute",
+      "url": "https://books.toscrape.com/"
+    },
+    {
+      "step": 7,
+      "at": 1795600063.2796419,
+      "kind": "tool",
+      "text": "browser_execute",
+      "url": "https://books.toscrape.com/catalogue/category/books/travel_2/index.html"
+    },
+    {
+      "step": 9,
+      "at": 1795600065.5710506,
+      "kind": "text",
+      "text": "Cheapest in Travel is \"The Road to Little Dribbling\" at \u00a323.21. Opening its product page:",
+      "url": null
+    },
+    {
+      "step": 10,
+      "at": 1795600066.3208435,
+      "kind": "tool",
+      "text": "browser_execute",
+      "url": "https://books.toscrape.com/catalogue/the-road-to-little-dribbling-adventures-of-an-american-in-britain-notes-from-a-small-island-2_277/index.html"
+    }
+  ],
+  "video": {
+    "path": "session-1.mp4",
+    "bytes": 174410,
+    "started_at": "2026-11-25T09:47:29.637000+00:00"
+  }
+}

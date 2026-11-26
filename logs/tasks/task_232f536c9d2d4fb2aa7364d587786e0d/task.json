@@ -1,0 +1,112 @@
+{
+  "id": "task_232f536c9d2d4fb2aa7364d587786e0d",
+  "object": "task",
+  "status": "completed",
+  "title": "Find Telugu film Oscar song",
+  "goal": "Using Wikipedia, find the Indian (Telugu-language) film whose song won the Academy Award for Best Original Song. Report: the film's title, its director, its theatrical release date (YYYY-MM-DD), its runtime in minutes, the winning song's title, the song's composer, the song's lyricist, and the song's length (m:ss). Use the film's and the song's own Wikipedia pages as the source.",
+  "environment": {
+    "type": "browser",
+    "start_url": "https://en.wikipedia.org/"
+  },
+  "output_schema": {
+    "type": "object",
+    "required": [
+      "film_title",
+      "director",
+      "release_date",
+      "runtime_minutes",
+      "song_title",
+      "composer",
+      "lyricist",
+      "song_length"
+    ],
+    "properties": {
+      "composer": {
+        "type": "string"
+      },
+      "director": {
+        "type": "string"
+      },
+      "lyricist": {
+        "type": "string"
+      },
+      "film_title": {
+        "type": "string"
+      },
+      "song_title": {
+        "type": "string"
+      },
+      "song_length": {
+        "type": "string",
+        "pattern": "^\\d+:\\d{2}$"
+      },
+      "release_date": {
+        "type": "string",
+        "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+      },
+      "runtime_minutes": {
+        "type": "integer"
+      }
+    },
+    "additionalProperties": false
+  },
+  "limits": {
+    "max_cost_usd": 0.5,
+    "max_runtime_seconds": 300
+  },
+  "model": "moss-balanced",
+  "effort": "low",
+  "metadata": {
+    "test": "02_india_oscar_song",
+    "label": "t02-balanced-schema"
+  },
+  "byok": false,
+  "result": {
+    "output": {
+      "composer": "M. M. Keeravani",
+      "director": "S. S. Rajamouli",
+      "lyricist": "Chandrabose",
+      "film_title": "RRR",
+      "song_title": "Naatu Naatu",
+      "song_length": "3:36",
+      "release_date": "2022-03-25",
+      "runtime_minutes": 182
+    },
+    "output_text": "{\n  \"film_title\": \"RRR\",\n  \"director\": \"S. S. Rajamouli\",\n  \"release_date\": \"2022-03-25\",\n  \"runtime_minutes\": 182,\n  \"song_title\": \"Naatu Naatu\",\n  \"composer\": \"M. M. Keeravani\",\n  \"lyricist\": \"Chandrabose\",\n  \"song_length\": \"3:36\"\n}"
+  },
+  "verification": {
+    "method": "output_schema",
+    "passed": true
+  },
+  "usage": {
+    "cost": {
+      "model_usd": 0.063219,
+      "total_usd": 0.063552,
+      "browser_usd": 0.0003333333333333333,
+      "traffic_usd": null
+    },
+    "steps": 5,
+    "cost_usd": 0.063219,
+    "model_calls": 6,
+    "input_tokens": 69228,
+    "output_tokens": 799,
+    "browser_minutes": 0.5,
+    "browser_seconds": 30,
+    "browser_traffic_mb": null,
+    "cached_input_tokens": 53079
+  },
+  "error": null,
+  "trace_available": true,
+  "video_available": false,
+  "video_state": "pending",
+  "live_url": null,
+  "cancel_requested": false,
+  "created_at": "2026-11-25T09:47:30.249443+00:00",
+  "started_at": "2026-11-25T09:47:30.260765+00:00",
+  "finished_at": "2026-11-25T09:48:00.707918+00:00",
+  "files_expire_at": "2026-12-02T09:48:00.707918+00:00",
+  "zero_data_retention": false,
+  "content_expires_at": null,
+  "content_deleted_at": null,
+  "webhook": null
+}

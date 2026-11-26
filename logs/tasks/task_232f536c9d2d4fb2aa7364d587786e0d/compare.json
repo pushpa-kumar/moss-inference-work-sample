@@ -1,0 +1,42 @@
+{
+  "film_title": {
+    "expected": "RRR",
+    "got": "RRR",
+    "match": true
+  },
+  "director": {
+    "expected": "S. S. Rajamouli",
+    "got": "S. S. Rajamouli",
+    "match": true
+  },
+  "release_date": {
+    "expected": "2022-03-25",
+    "got": "2022-03-25",
+    "match": true
+  },
+  "runtime_minutes": {
+    "expected": 182,
+    "got": 182,
+    "match": true
+  },
+  "song_title": {
+    "expected": "Naatu Naatu",
+    "got": "Naatu Naatu",
+    "match": true
+  },
+  "composer": {
+    "expected": "M. M. Keeravani",
+    "got": "M. M. Keeravani",
+    "match": true
+  },
+  "lyricist": {
+    "expected": "Chandrabose",
+    "got": "Chandrabose",
+    "match": true
+  },
+  "song_length": {
+    "expected": "3:36",
+    "got": "3:36",
+    "match": true
+  }
+}

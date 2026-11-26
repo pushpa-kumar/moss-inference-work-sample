@@ -1,0 +1,21 @@
+{
+  "label": "t01-no-url",
+  "task_id": "task_41931f606ba940b88c545aad27c36231",
+  "model": "moss-balanced",
+  "effort": "low",
+  "schema": true,
+  "status": "completed",
+  "error": null,
+  "verification": {
+    "method": "output_schema",
+    "passed": true
+  },
+  "wall_s": 32.8,
+  "usage_steps": 7,
+  "trace_steps": 7,
+  "cost_usd": 0.072705,
+  "has_result": true,
+  "output_files": [],
+  "fields_correct": 5,
+  "fields_total": 5
+}

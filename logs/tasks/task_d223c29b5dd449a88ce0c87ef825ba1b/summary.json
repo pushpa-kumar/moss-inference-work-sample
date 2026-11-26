@@ -1,0 +1,21 @@
+{
+  "label": "t01-portal-like",
+  "task_id": "task_d223c29b5dd449a88ce0c87ef825ba1b",
+  "model": "z-ai/glm-5.3",
+  "effort": "medium",
+  "schema": false,
+  "status": "failed",
+  "error": {
+    "code": "no_answer",
+    "message": "The agent gave no final reply"
+  },
+  "verification": null,
+  "wall_s": 20.5,
+  "usage_steps": 5,
+  "trace_steps": 5,
+  "cost_usd": 0.023459,
+  "has_result": false,
+  "output_files": [],
+  "fields_correct": 0,
+  "fields_total": 5
+}

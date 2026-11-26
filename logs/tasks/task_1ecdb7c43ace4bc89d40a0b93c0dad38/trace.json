@@ -1,0 +1,73 @@
+{
+  "final_result": "{\n  \"film_title\": \"RRR\",\n  \"director\": \"S. S. Rajamouli\",\n  \"release_date\": \"2022-03-25\",\n  \"runtime_minutes\": 182,\n  \"song_title\": \"Naatu Naatu\",\n  \"composer\": \"M. M. Keeravani\",\n  \"lyricist\": \"Chandrabose\",\n  \"song_length\": \"3:36\"\n}",
+  "steps": 5,
+  "screenshots": [
+    {
+      "path": "00001-step-3.png",
+      "step": 3,
+      "captured_at": 1795676631.391665,
+      "url": "https://en.wikipedia.org/wiki/Main_Page"
+    },
+    {
+      "path": "00002-step-4.png",
+      "step": 4,
+      "captured_at": 1795676636.5421476,
+      "url": "https://en.wikipedia.org/wiki/RRR"
+    },
+    {
+      "path": "00003-step-5.png",
+      "step": 5,
+      "captured_at": 1795676641.1387975,
+      "url": "https://en.wikipedia.org/wiki/Naatu_Naatu"
+    }
+  ],
+  "timeline": [
+    {
+      "step": 1,
+      "at": 1795676625.6195083,
+      "kind": "text",
+      "text": "I\u2019ll start at Wikipedia\u2019s homepage, identify the film, and check the eight requested fields on the film\u2019s and song\u2019s own pages. I\u2019ll return the JSON with source links and won\u2019t create any files.\n",
+      "url": null
+    },
+    {
+      "step": 2,
+      "at": 1795676625.8567111,
+      "kind": "tool",
+      "text": "skill",
+      "url": null
+    },
+    {
+      "step": 3,
+      "at": 1795676631.4127376,
+      "kind": "tool",
+      "text": "browser_execute",
+      "url": "https://en.wikipedia.org/wiki/Main_Page"
+    },
+    {
+      "step": 4,
+      "at": 1795676636.5639262,
+      "kind": "tool",
+      "text": "browser_execute",
+      "url": "https://en.wikipedia.org/wiki/RRR"
+    },
+    {
+      "step": 5,
+      "at": 1795676641.1606963,
+      "kind": "tool",
+      "text": "browser_execute",
+      "url": "https://en.wikipedia.org/wiki/Naatu_Naatu"
+    },
+    {
+      "step": 6,
+      "at": 1795676648.7402089,
+      "kind": "text",
+      "text": "{\n  \"film_title\": \"RRR\",\n  \"director\": \"S. S. Rajamouli\",\n  \"release_date\": \"2022-03-25\",\n  \"runtime_minutes\": 182,\n  \"song_title\": \"Naatu Naatu\",\n  \"composer\": \"M. M. Keeravani\",\n  \"lyricist\": \"Chandrabose\",\n  \"song_length\": \"3:36\"\n}",
+      "url": null
+    }
+  ],
+  "video": {
+    "path": "session-1.mp4",
+    "bytes": 1520925,
+    "started_at": "2026-11-26T07:03:39.834000+00:00"
+  }
+}

@@ -1,0 +1,40 @@
+[
+  {
+    "step": "default_load_after_update",
+    "waited_s": 0,
+    "sees_new_doc": false
+  },
+  {
+    "step": "default_load_after_update",
+    "waited_s": 10,
+    "sees_new_doc": false
+  },
+  {
+    "step": "default_load_after_update",
+    "waited_s": 30,
+    "sees_new_doc": false
+  },
+  {
+    "step": "after_reload",
+    "sees_new_doc": true
+  },
+  {
+    "step": "auto_refresh_5s",
+    "visible": true,
+    "seconds": 2.0
+  },
+  {
+    "step": "size",
+    "docs": 1000,
+    "load_s": 4.04,
+    "first_query_ms": 11.2,
+    "index_on_disk_mb": 1.63
+  },
+  {
+    "step": "size",
+    "docs": 10000,
+    "load_s": 6.86,
+    "first_query_ms": 6.6,
+    "index_on_disk_mb": 16.29
+  }
+]

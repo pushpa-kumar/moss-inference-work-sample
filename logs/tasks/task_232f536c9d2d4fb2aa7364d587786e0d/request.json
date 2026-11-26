@@ -1,0 +1,62 @@
+{
+  "label": "t02-balanced-schema",
+  "body": {
+    "goal": "Using Wikipedia, find the Indian (Telugu-language) film whose song won the Academy Award for Best Original Song. Report: the film's title, its director, its theatrical release date (YYYY-MM-DD), its runtime in minutes, the winning song's title, the song's composer, the song's lyricist, and the song's length (m:ss). Use the film's and the song's own Wikipedia pages as the source.",
+    "environment": {
+      "type": "browser",
+      "start_url": "https://en.wikipedia.org/"
+    },
+    "model": "moss-balanced",
+    "effort": "low",
+    "output_schema": {
+      "type": "object",
+      "properties": {
+        "film_title": {
+          "type": "string"
+        },
+        "director": {
+          "type": "string"
+        },
+        "release_date": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "runtime_minutes": {
+          "type": "integer"
+        },
+        "song_title": {
+          "type": "string"
+        },
+        "composer": {
+          "type": "string"
+        },
+        "lyricist": {
+          "type": "string"
+        },
+        "song_length": {
+          "type": "string",
+          "pattern": "^\\d+:\\d{2}$"
+        }
+      },
+      "required": [
+        "film_title",
+        "director",
+        "release_date",
+        "runtime_minutes",
+        "song_title",
+        "composer",
+        "lyricist",
+        "song_length"
+      ],
+      "additionalProperties": false
+    },
+    "limits": {
+      "max_runtime_seconds": 300,
+      "max_cost_usd": 0.5
+    },
+    "metadata": {
+      "test": "02_india_oscar_song",
+      "label": "t02-balanced-schema"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "title": "The Road to Little Dribbling: Adventures of an American in Britain (Notes From a Small Island #2)",
+  "price_gbp": 23.21,
+  "star_rating": 1,
+  "upc": "366a236aa1ea6f07",
+  "in_stock": 3,
+  "_source": "curl of books.toscrape.com travel_2 category + product page, 2026-11-25"
+}
